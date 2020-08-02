@@ -30,7 +30,8 @@
                
 		<sonar.sources>src/main/mule,src/main/resources,src/test/munit,/target/site/munit/coverage/</sonar.sources>
 	
-
+              <maven.compiler.source>1.8</maven.compiler.source> 
+              <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 
