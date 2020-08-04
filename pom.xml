@@ -36,6 +36,8 @@
 
 
 	<dependencies>
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-cloud-connectors</artifactId>
@@ -166,13 +168,24 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
+<!-- adding plugin > -->
+			
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+				</configuration>
+			</plugin>
+			
 			<plugin>
 				<groupId>org.sonarsource.scanner.maven</groupId>
 				<artifactId>sonar-maven-plugin</artifactId>
 
 			</plugin>
 
-
+           
 		</plugins>
 	</build>
 	<repositories>
